@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block content %}
+
+<body>
+ <div class="align-content-lg-center">
+    <form method="post" novalidate>
+
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-success" >Save</button>
+      
+        <p>Don't have account <a href="signup">sigUp</p>
+      </form>
+ </div>
+</body>
+
+{% endblock %}
+

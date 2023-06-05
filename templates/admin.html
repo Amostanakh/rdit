@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block content %}
+
+<div class="container">
+  <h1>Members</h1>
+  <table id="customers" border="1">
+    <thead>
+      <th>phone_number</th>
+      <th>create timestamp</th>
+      <th>update timestamp</th>
+      <th>created by</th>
+      <th colspan="2" id="mid">Action</th>
+    </thead>
+    <tr>
+      <th>07711111</th>
+      <th>2023-06-05T15:48:58+00:00</th>
+      <th>2023-06-05T15:48:58+00:00</th>
+      <th>Amos</th>
+      <td>
+
+        <p><a href="update">Update</p>
+      
+      </td>
+      <td>
+        <a href="delete"><button id="del">delete</button></a>
+      </td>
+    </tr>
+  </table>
+  <br /><br />
+  <a href="addy"><button id="new3">Add Member</button></a>
+</div>
+{% endblock %}

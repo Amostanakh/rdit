@@ -1,0 +1,6 @@
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block content %}
+<h1>Update Member</h1>
+<form action="{% url 'uprec' mem.id %}" method="post">
+  {% csrf_token %} {% csrf_token %} {{ myUpdate|crispy }}
+</form>
+{% endblock %}
